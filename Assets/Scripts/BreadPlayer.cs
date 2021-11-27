@@ -5,9 +5,9 @@ using UnityEngine;
 public class BreadPlayer : MonoBehaviour
 {
 
-    public float rotationSpeed = 50.0f;
-    private float maxRotationSpeed = Mathf.PI * 3.0f;
-    private float maxSpeed = 10.0f;
+    public float rotationSpeed = 450.0f;
+    private float maxRotationSpeed = Mathf.PI * 150.0f;
+    private float maxSpeed = 100.0f;
 
     private Rigidbody2D rb;
 
