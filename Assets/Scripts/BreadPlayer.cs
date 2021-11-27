@@ -20,7 +20,8 @@ public class BreadPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float rotation = Input.GetAxis("Vertical") * rotationSpeed;
+        //float rotation = Input.GetAxis("Vertical") * rotationSpeed;
+        float rotation = -1.0f * Input.GetAxis("Horizontal") * rotationSpeed;
 
         rotation *= Time.deltaTime;
 
