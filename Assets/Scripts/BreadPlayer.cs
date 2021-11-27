@@ -6,6 +6,9 @@ public class BreadPlayer : MonoBehaviour
 {
 
     public float rotationSpeed = 50.0f;
+    private float maxRotationSpeed = Mathf.PI * 3.0f;
+    private float maxSpeed = 10.0f;
+
     private Rigidbody2D rb;
 
     // Start is called before the first frame update
@@ -22,5 +25,20 @@ public class BreadPlayer : MonoBehaviour
         rotation *= Time.deltaTime;
 
         rb.AddTorque(rotation);
+    }
+
+    void FixedUpdate()
+    {
+        if (Mathf.Abs(rb.angularVelocity) >= maxRotationSpeed)
+        {
+            rb.angularVelocity = maxRotationSpeed * Mathf.Sign(rb.angularVelocity);
+        }
+
+        if (rb.velocity.magnitude >= maxSpeed)
+        {
+            rb.velocity = rb.velocity.normalized * maxSpeed;
+        }
+
+
     }
 }
