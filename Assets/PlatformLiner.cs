@@ -21,6 +21,9 @@ public class PlatformLiner : MonoBehaviour
         lineRender.endColor = Color.grey;
         lineRender.startWidth = 0.05f;
         lineRender.endWidth = 0.05f;
+
+        float width = lineRender.startWidth;
+        lineRender.material.mainTextureScale = new Vector2(1f / width / 2, 1.0f);
     }
 
     // Update is called once per frame
