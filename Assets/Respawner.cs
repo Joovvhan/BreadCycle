@@ -15,6 +15,7 @@ public class Respawner : MonoBehaviour
         }    
         else
         {
+            PlayerPrefs.SetInt("CheckPoint", 0);
             DontDestroyOnLoad(gameObject);
         }
     }
@@ -22,6 +23,7 @@ public class Respawner : MonoBehaviour
     private void Start() 
     {
         currentCheckPointIndex = 0;
+        
         // RespawnBread();
     }
 
@@ -29,11 +31,18 @@ public class Respawner : MonoBehaviour
     {
         SceneManager.LoadScene(0);
 
-        FindObjectOfType<CheckPoints>().SetBreadPos(currentCheckPointIndex);
+        //FindObjectOfType<CheckPoints>().SetBreadPos(currentCheckPointIndex);
+    }
+
+    public Vector3 GetBreadPos()
+    {
+        currentCheckPointIndex = PlayerPrefs.GetInt("CheckPoint");
+        return FindObjectOfType<CheckPoints>().GetBreadPos(currentCheckPointIndex);
     }
 
     public void SetCheckPoint(int index)
     {
         currentCheckPointIndex = index;
+        PlayerPrefs.SetInt("CheckPoint", currentCheckPointIndex);
     }
 }

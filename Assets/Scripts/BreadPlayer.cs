@@ -15,6 +15,7 @@ public class BreadPlayer : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        transform.position = FindObjectOfType<Respawner>().GetBreadPos();
     }
 
     // Update is called once per frame
