@@ -199,7 +199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48700289}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7, y: -0.22, z: 0}
+  m_LocalPosition: {x: 7, y: -0.4, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1543748451}
@@ -275,7 +275,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Baguette \nin \nParis"
+  m_Text: 'You
+
+    Baked
+
+    Well!'
 --- !u!222 &52264995
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -791,7 +795,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You Baked Well!
+  m_Text: Thank You For Playing
 --- !u!222 &765544462
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2235,8 +2239,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099526457}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.28, y: 0.05, z: 0}
-  m_LocalScale: {x: 1.1952, y: 1.1952, z: 1.1952}
+  m_LocalPosition: {x: 1.8, y: 0.5, z: 0}
+  m_LocalScale: {x: 1.099823, y: 1.1952, z: 1.1952}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
