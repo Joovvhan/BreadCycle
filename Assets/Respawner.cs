@@ -29,7 +29,7 @@ public class Respawner : MonoBehaviour
 
     public void RespawnBread()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
 
         //FindObjectOfType<CheckPoints>().SetBreadPos(currentCheckPointIndex);
     }
