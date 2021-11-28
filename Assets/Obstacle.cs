@@ -9,7 +9,7 @@ public class Obstacle : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            FindObjectOfType<Respawner>();
+            FindObjectOfType<Respawner>().RespawnBread();
         }    
     } 
 }
